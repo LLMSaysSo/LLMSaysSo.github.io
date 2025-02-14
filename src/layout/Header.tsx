@@ -12,8 +12,8 @@ const Header = () => {
 			<nav className="container mx-auto px-4 py-4">
 				<div className="flex justify-between items-center">
 					{/* Logo */}
-					<Link to="/" className="text-2xl font-bold text-blue-600">
-						Logo
+					<Link to="/" className="text-2xl font-bold text-orange-500">
+						LLMSaysSo
 					</Link>
 
 					{/* Desktop Navigation */}
@@ -22,10 +22,7 @@ const Header = () => {
 							<Link
 								key={item.path}
 								to={item.path}
-								className={`transition-colors ${currentPath === item.path
-									? 'text-blue-600 font-semibold'
-									: 'text-gray-600 hover:text-blue-600'
-									}`}
+								className={`transition-colors text-orange-500 font-semibold`}
 							>
 								{item.label}
 							</Link>
@@ -49,8 +46,8 @@ const Header = () => {
 								key={item.path}
 								to={item.path}
 								className={`block transition-colors ${currentPath === item.path
-									? 'text-blue-600 font-semibold'
-									: 'text-gray-600 hover:text-blue-600'
+									? 'text-orange-500 font-semibold'
+									: 'text-gray-600 hover:text-orange-500'
 									}`}
 							>
 								{item.label}
