@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Landing from './pages/Landing';
+import Demo from './pages/Demo.tsx';
+
 
 // Footer Component
 
@@ -20,6 +22,9 @@ const App = () => {
 
   const renderContent = () => {
     switch (currentPath) {
+      case "/app":
+        return <Demo />;
+        break;
       default:
         return <Landing />;
     }
